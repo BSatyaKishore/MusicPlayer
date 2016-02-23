@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/dashboard.css" rel="stylesheet">
+        <link href="css/cover.css" rel="stylesheet">
+        <link href="css/jumbotron-narrow.css" rel="stylesheet">
+        <style id="holderjs-style" type="text/css"></style>
+        <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid" style="background-color: #ec971f; box-shadow: 5px 5px 5px #888">
+            <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color: #080808; font-family: fantasy; font-size: 30px" href="http://getbootstrap.com/examples/dashboard/#">SongBase</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 50px">
+              <li><a href="about.html">About</a></li>
+              <li><a href="home.php?id=<?php $_COOKIE["userid"] ?>">Home</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">&uhblk;<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="profile.php">Profile</a></li>
+                  <li><a href="friends.php">Friends</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="signin.php">LogOut</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </li>
+          </ul>
+            <div class="col-lg-6" style="margin-top: 10px; width: 800px; margin-left: 100px">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search <span class="caret"></span></button>
+                <ul class="dropdown-menu pull-right">
+                  <li class="active"><a href="#">Everything</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Only Friends</a></li>
+                  <li><a href="#">Only Songs</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+          </div>
+        </div>
+      </div>
+    </div>
+        <div>
+            <br/>
+            <br/>
+            <h2 style="color: black">About</h2>
+            <p>This is SongBase. Thank you. Enjoy.</p>
+            <p>Co-founded by <a href="http://facebook.com/deepakcool25">Deepak</a> and <a href="http://facebook.com/b.satyakishore">Satya</a></p>
+        </div>
+        <div class="col-sm-3 col-md-2 sidebar" style="background-color: #285e8e">
+            <ul class="nav nav-sidebar">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px">Artists<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <?php
+                            /*$sql = "select artist from songs;";
+                            $ret = pg_query($db, $sql);
+                            if(!$ret){
+                                echo pg_last_error($db);
+                                exit;
+                            }
+                            while($row = pg_fetch_row($ret)){
+                                echo "<li><a href='#'>". $row[0]. "</a></li>";
+                            }*/
+                        ?>
+                    </ul>
+                </li>
+                <li><a href="#" style="font-size: 15px">Albums</a></li>
+                <li><a href="#" style="font-size: 15px">Genre</a></li>
+                <li class="divider"></li>
+                <li><a href="#" style="font-size: 15px">Feedback</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
